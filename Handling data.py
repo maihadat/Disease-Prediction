@@ -8,11 +8,13 @@ for i in range(1, 18):
     for symptom in dataset.iloc[:, i].unique().tolist():
         if symptom not in symptoms:
             symptoms.append(symptom)
-
+            
 diseases = []
 for disease in dataset.iloc[:, 0].unique().tolist():
     if disease not in diseases:
         diseases.append(disease)
+        
+        
 list_of_dict = []
 for i in range(1, dataset.shape[0]):
     dict = {}
@@ -27,5 +29,7 @@ for i in range(1, dataset.shape[0]):
                 dict[symptom] = 0
     dict["Disease"] = tmp[0]
     list_of_dict.append(dict)
+    
+    
 df = pd.DataFrame(list_of_dict)
 df.to_csv("Data_sets/out.csv")
