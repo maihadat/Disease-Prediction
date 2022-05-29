@@ -23,7 +23,7 @@ for i in range(1, dataset.shape[0]):
     for symptom in symptoms:
         if type(symptom) is str:
             if symptom in tmp:
-                dict[symptom] = 1
+                dict[symptom] = Symptom_severity.loc[symptom.replace(" ", ""), "weight"]
                 dict["Severity"] += Symptom_severity.loc[symptom.replace(" ", ""), "weight"]
             else:
                 dict[symptom] = 0
