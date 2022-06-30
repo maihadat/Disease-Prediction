@@ -1,6 +1,5 @@
 - Hoàng Văn An:
-
-
+ANN (Mạng nơ-ron)
 - Trần Vương Quốc Đạt:
 
 
