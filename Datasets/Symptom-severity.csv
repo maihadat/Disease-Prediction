@@ -130,13 +130,12 @@ inflammatory_nails,2
 blister,4
 red_sore_around_nose,2
 yellow_crust_ooze,3
-prognosis,5
 Fever,6
 Tiredness,6
 Dry-Cough,7
 Difficulty-in-Breathing,4
 Sore-Throat,2
-None_Sympton,0
+None_Sympton,1
 Pains,4
 Nasal-Congestion,6
 Runny-Nose,4
